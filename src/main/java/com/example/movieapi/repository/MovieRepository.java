@@ -17,4 +17,8 @@ public class MovieRepository {
     public List<Movie> findAll() {
         return movieMapper.findAll();
     }
+
+    public int insertMovie(Movie movie) {
+        return movieMapper.insert(movie);
+    }
 }
